@@ -1,10 +1,10 @@
 
 describe("Calculator", function() {
-  it(" returns 5 when provided 3 and 2", function() {
+  it(" returns 5 when 3 is added to 2", function() {
     expect(calculator['+'](3, 2)).toEqual(5);
   });
 
-  it(" returns -1 when provided -3 and 2", function() {
+  it(" returns -1 when -3 is added to 2", function() {
     expect(calculator['+'](-3, 2)).toEqual(-1);
   });
 

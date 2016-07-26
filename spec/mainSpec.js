@@ -1,10 +1,12 @@
 
-describe("output box", function() {
-  it("will contain the value -1 when -3 is added with 2", function() {
+describe("calculate", function() {
+  it("it determines the chosen operation and gets the corresponding result", function() {
     document.getElementById("n1").value = -3;
     document.getElementById("n2").value = 2;
-    getSum();
+    document.getElementById("operationSelector").value = '*';
+    calculate();
     result = parseInt(document.getElementById("output").value);
-    expect(result).toEqual(-1);
-  });
+    expect(result).toEqual(-6);
+
+  })
 });

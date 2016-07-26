@@ -27,4 +27,10 @@ describe("calculate", function() {
     expect(result).toEqual(-6);
 
   })
+
+  it("alerts the user if values are not entered", function() {
+    spyOn(window, "alertUser");
+    document.getElementById('mybutton').click();
+    expect(window.alertUser).toHaveBeenCalled();
+  })
 });

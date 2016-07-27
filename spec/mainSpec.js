@@ -2,16 +2,7 @@
 describe("calculate", function() {
 
   beforeEach(function() {
-
-    $form = affix('form[name="myform"]');
-    $form.affix('input[id="n1"]');
-    $form.affix('input[id="n2"]');
-    $select = $form.affix('select[id="operationSelector"]');
-    $select.affix('option[value="+"]');
-    $select.affix('option[value="-"]');
-    $select.affix('option[value="*"]');
-    $form.affix('button[id="mybutton"][type="button"][onClick=calculate()]');
-    $form.affix('input[id="output"][type="number"]');
+    loadFixtures('../../../index.html');
   });
 
 

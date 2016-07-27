@@ -12,6 +12,9 @@ function calculate() {
     alertUser();
   }
 
+  n1 = parseFloat(n1);
+  n2 = parseFloat(n2);
+
   var result = calculator[operation](n1, n2);
   document.getElementById('output').value = result;
 }
